@@ -18,8 +18,14 @@ Install dependencies
 
 ```
 $ npm install
-$ composer install
+$ composer update
 ```
+
+Copy .env file
+```
+$ cp .env.example .env
+```
+
 Start Sail
 
 ```
