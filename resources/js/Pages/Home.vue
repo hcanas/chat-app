@@ -53,7 +53,7 @@ onMounted(() => {
             </h2>
         </template>
 
-        <div class="flex-grow flex flex-col bg-white rounded shadow">
+        <div class="flex-grow flex flex-col bg-white">
             <div ref="chatBox" class="flex-grow flex flex-col-reverse space-y-4 space-y-reverse h-0 px-4 pt-8 pb-4 overflow-y-auto">
                 <div v-for="message in messages" class="flex flex-col" :class="{ 'items-end': $page.props.auth.user.id === message.user.id }">
                     <span class="text-sm text-gray-600 font-medium">{{ `${message.user.name} says...` }}</span>
